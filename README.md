@@ -48,6 +48,49 @@ Agro-Smart is a web application designed to assist farmers with crop recommendat
 
 ```Simply exicute the run.sh file if it doesn't work then do the below steps```
 
+Certainly! Here are the steps to install the dependencies from a `requirements.txt` file and set up a Conda environment using a `environment.yml` file:
+
+### Installing Dependencies from `requirements.txt`
+
+1. **Navigate to Project Directory:**
+   ```bash
+   cd /path/to/project_directory
+   ```
+
+2. **Activate Virtual Environment (Optional):**
+   If you're using a virtual environment, activate it:
+   ```bash
+   source /path/to/venv/bin/activate  # Replace `/path/to/venv` with the path to your virtual environment
+   ```
+
+3. **Install Dependencies:**
+   Use `pip` to install the dependencies listed in the `requirements.txt` file:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Setting up Conda Environment from `environment.yml`
+
+1. **Navigate to Project Directory:**
+   ```bash
+   cd /path/to/project_directory
+   ```
+
+2. **Create Conda Environment:**
+   Use the `conda env create` command to create an environment from the `environment.yml` file:
+   ```bash
+   conda env create -f environment.yml
+   ```
+
+3. **Activate Conda Environment:**
+   Activate the newly created Conda environment:
+   ```bash
+   conda activate <environment_name>
+   ```
+
+   Replace `<environment_name>` with the name of the environment specified in the `environment.yml` file.
+
+
 1. **Start the Flask server:**
     ```bash
     python app.py
